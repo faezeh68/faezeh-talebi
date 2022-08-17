@@ -1,0 +1,452 @@
+*{font-family:Arial, Helvetica, sans-serif;}
+html {
+    /* background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat; */
+    background: #F2F1EF;
+    scroll-behavior: smooth;
+    animation: fadeInWeb 3s;
+}
+
+@keyframes fadeInWeb {
+    from{opacity: 0;}
+    to{opacity: 1;}
+    
+}
+
+
+
+
+
+
+
+@media all and (min-width:700px){
+    body{
+            transition: 2s;
+        margin: 2% 5% 2% 5%;
+    }
+    
+    header{
+        display:flex;flex-direction: row;
+        background: #B1A6A4;
+        color:#2E4052;
+        transition: 1000ms;
+        padding:15%;margin:1% 1% 10% 1%;
+        /* position: sticky;top:1px; */
+        transition:500ms;
+    }
+    header:hover{background-color: #697181;}
+    header:hover h1{
+        color: #F2F1EF;
+        font-size: 40px;
+    }
+
+    header:hover h2{
+        color: #F2F1EF;
+        font-size: 30px;
+    }
+    header:hover a{
+        color: #F2F1EF;
+    }
+
+    header:hover img{
+        clip-path: circle(100px);
+        width:220px;
+    }
+    
+    header div{
+        flex-basis: 33.333%;
+        padding: 0;
+        transition:500ms;
+    } 
+
+    header div:nth-child(2){
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    header div img {
+        transition: 500ms;
+        clip-path: circle(95px);
+        width: 200px;padding: 0;
+    }
+
+
+    h1{
+        transition: 500ms;
+        font-size: 35px;
+        position: relative;
+    }
+
+
+    h2{
+        transition:500ms;
+        font-size: 27;
+    }
+
+   
+    
+    #drop-btn{display: none;}
+
+    header div ul li a{
+        text-decoration: none;
+        display: inline-block;
+        transition: 500ms;
+        color:#2E4052;;
+    }
+    header div ul,header div ul li a {
+        font-size: 18px;
+        list-style-type: none;
+        transition: 500ms;
+    }
+
+    header div ul li a:hover{
+        color:beige;
+        border-bottom:solid beige ;
+        font-size:24px;
+    }
+
+
+
+    #about-me {
+        font-size: 18px;
+        line-height: 130%;
+        text-align: justify;
+        /* border-radius: 3%; */
+        display: flex;
+        background: #D8CFD0 ;
+        padding: 2%;margin:5% 1% 5% 1%;
+        transition:500ms;
+        color: 565A54;
+    }
+
+    
+    #about-me img{
+        /* display: none; */
+        flex-basis: 20%;
+        width:20%;height:max-content;
+        margin-right: 1%;
+        float:left;
+        border-radius:1%;border:outset black;
+    }
+
+    /* #about-me:hover {
+        background-color: rgba(167, 201, 201, 0.336);
+    } */
+
+    #portfolio {
+        /* border-radius: 3%; */
+        background: #B1A6A4;
+        padding: 2%;margin:5% 1% 5% 1%;
+    }
+    #portfolio h3{
+        color:rgb(48, 48, 44);
+    }
+    
+    #portfolio div {
+        display:flex;
+        flex-direction: row;
+    }
+    
+    #portfolio div div {
+        /* border-radius: 2%; */
+        /* flex-basis: 25%; */
+        flex-basis: 50%;
+        width:40%;
+        text-align: center;
+        font-size: 18px;
+        margin:0 5% 0 5%;
+        padding:1%;
+        background: #93A6B3;
+        transition:500ms;
+    }
+    
+    #portfolio div div img{
+        /* top:1%;
+        left:1%;
+        right:1%; */
+        display: block;
+        position: relative;
+        clip-path:circle(130px);
+        width:100%;
+        height:75%;
+        
+    }
+    
+    #portfolio div div a {
+        width: 100%;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        border-bottom:solid rgb(2, 2, 2);
+        transition: 500ms;
+    }
+    
+    #portfolio div div:hover a{
+        color:beige;
+        border-bottom:solid beige;
+    }
+    
+    #portfolio div div:hover {
+        background: #79ADDC;
+    }
+    
+    footer{
+        background:#93A6B3;
+        margin:1%;padding:1%;
+    }
+    
+    footer li {
+        display: inline;
+        list-style-type: none;
+        width:100%;
+        margin: 0 1% 2% 1%;
+    }
+    footer li a {
+        text-decoration: none;
+        color:black;
+        transition:500ms;
+    }
+    footer ul {
+        text-align: justify;
+        width:40%;padding:0 30% 0 30%;
+     } 
+    footer li a:hover{
+        color:beige;
+    }
+
+
+
+    
+}
+
+
+#projects{
+
+    width:94%;
+    padding: 2%;margin:5% 1% 5% 1%;
+
+    /* border-radius: 2%; */
+}
+#projects h4{margin:1%;}
+#projects div iframe{
+    border-radius: 1%;
+    width:100%;height: 600px;
+}
+
+.invisible {
+    display:none;
+
+}
+
+.visible {
+    display:block;
+    animation-name: fadeIn;
+    animation-duration: 4s;
+
+}
+
+@keyframes fadeIn {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+
+
+
+
+
+@media all and (max-width:700px) {
+
+
+body {
+    margin: 5% 8% 5% 8%;
+}
+
+/* 
+*******************************************
+styling the header down here
+*******************************************
+*/
+
+header {
+    background: #405460 ;
+    color:#9accd3;
+    transition: 1000ms;
+    padding:3px;margin:1% 1% 6% 1%;
+
+}
+
+header div:first-of-type{
+    text-align: center;
+    width:40%;
+    margin: 1% 30% 0 30%;
+    padding-top:;
+}
+
+header h1, header h2{
+    position: relative;
+}
+#drop-menu{
+    transition: 500ms;
+    width:30%;
+    margin: 0 35% 0 35%;
+    background-color: black;
+}
+#drop-btn {
+    width:100%;
+    background: black;
+    color:white;
+    transition:500ms ;
+}
+#drop-menu:hover{
+    background: black;
+    color:white;
+    transition: 500ms;
+
+}
+
+
+#drop-content {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    right:0;
+    padding:0;
+    width:20%;
+    margin: 0 40% 1% 40%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+
+
+#drop-menu:hover #drop-content{
+    border-radius: 3%;
+    display:block;
+    background: rgba(70, 111, 128, 0.747);
+}
+
+#drop-menu:hover #drop-btn{
+    background-color: white;
+    color:black;
+}
+
+#drop-content li a{
+    text-decoration: none;
+    color:black;
+    border-bottom: solid black;
+    transition: 500ms;
+}
+#drop-content li:hover,#drop-content li:hover a{
+    color:beige;
+    border-color:beige;
+}
+
+
+
+
+/* 
+*******************************************
+styling the header here is finished
+*******************************************
+*/
+
+#about-me {
+    background: url("../img/frog.jpg");
+    /* border-radius: 3%; */
+    text-align: justify;
+    display: flex;
+    background: #AFBBC4;
+    padding: 2%;margin:5% 1% 5% 1%;
+}
+
+#about-me img{
+    display: none;
+    flex-basis: 20%;
+    width:30%;height: auto;
+    float:left;
+    border-radius:1%;border:outset black;
+}
+
+#portfolio {
+    /* border-radius: 3%; */
+    background: #768D89;
+    padding: 2%;margin:10% 1% 6% 1%;
+}
+#portfolio h3{
+    color:rgb(216, 216, 201);
+}
+
+#portfolio div {
+    display:flex;
+    flex-direction: row;
+}
+
+#portfolio div div {
+    border-radius: 2%;
+    /* flex-basis: 25%; */
+    flex-basis: 50%;
+    width:25%;
+    text-align: center;
+    font-size: 12px;
+    margin:1%;
+    padding:1%;
+    background: rgb(236, 227, 250);
+    transition:500ms;
+}
+
+#portfolio div div img{
+    top:1%;
+    left:1%;
+    right:1%;
+    display: block;
+    position: relative;
+    clip-path:circle(70px);
+    width:100%;
+    height:75%;
+    
+}
+
+#portfolio div div a {
+    width: 100%;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-bottom:solid rgb(2, 2, 2);
+    transition: 500ms;
+}
+
+#portfolio div div:hover a{
+    color:beige;
+    border-bottom:solid beige;
+}
+
+#portfolio div div:hover {
+    background: #79ADDC;
+}
+
+footer{
+    background:#93A6B3;
+    margin:1%;padding:1%;
+}
+
+footer li {
+    list-style-type: none;
+    width:90%;
+    padding: 0 5% 2% 5%;
+}
+footer li a {
+    text-decoration: none;
+    color:black;
+    transition:500ms;
+}
+footer ul {
+    text-align: justify;
+    width:40%;padding:0 30% 0 30%;
+ } 
+footer li a:hover{
+    color:beige;
+}
+
+
+}   
