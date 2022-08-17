@@ -32,14 +32,39 @@ html {
         background: #B1A6A4;
         color:#2E4052;
         transition: 1000ms;
-        padding:15%;margin:1% 1% 10% 1%;
+        padding:10%;margin:1% 0% 10% 0%;
         /* position: sticky;top:1px; */
         transition:500ms;
     }
+
+    #headings {
+        margin: 3% 1% 0 4%;
+        width:33.3%;
+    }
+    #preface{
+        width: 33.3%;
+        margin-right:20px;
+    }
+
+    #drop-menu {
+        margin: 5% 1% 0 0;
+    }
+    header h1{
+        font-size: 40px;
+        width:100%;
+        transition: 500ms;
+    }
+
+    header h2{
+        font-size:28px ;
+        transition: 500ms;
+    }
+
+
     header:hover{background-color: #697181;}
     header:hover h1{
         color: #F2F1EF;
-        font-size: 40px;
+        font-size: 42px;
     }
 
     header:hover h2{
@@ -51,15 +76,10 @@ html {
     }
 
     header:hover img{
-        clip-path: circle(100px);
-        width:220px;
+        clip-path: circle(130px);
+        width:260px;
     }
     
-    header div{
-        flex-basis: 33.333%;
-        padding: 0;
-        transition:500ms;
-    } 
 
     header div:nth-child(2){
         padding-left: 0;
@@ -67,22 +87,10 @@ html {
     }
 
     header div img {
+        margin:1%;
         transition: 500ms;
-        clip-path: circle(95px);
-        width: 200px;padding: 0;
-    }
-
-
-    h1{
-        transition: 500ms;
-        font-size: 35px;
-        position: relative;
-    }
-
-
-    h2{
-        transition:500ms;
-        font-size: 27;
+        clip-path: circle(120px);
+        width: 250px;padding: 0;
     }
 
    
