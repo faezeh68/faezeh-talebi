@@ -25,7 +25,7 @@ for (let link of projectLinks){
 
 
         document.querySelector(projectID).className = "visible";
-        document.querySelector("#projects").style.backgroundColor = "#41766f";
+        document.querySelector("#projects").style.backgroundColor = "#E8DCD0";
 
     });
 }
